@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+</div>
+<label>
+  Number for factorial:
+  <input type="text" [formControl]="num" (focus)="factorialVal = 0">
+</label>
+
+<br />
+<label>
+  <input type="submit" (click)="getFactorial()" value="calculate">
+</label>
+<p *ngIf="factorialVal !== 0">
+  Factorial of {{ num.value }} is {{ factorialVal }}
+</p>
+<p *ngIf="error !== ''">
+  {{ error }}
+</p>
+<router-outlet></router-outlet>
