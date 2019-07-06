@@ -12,3 +12,7 @@ npm install   (for node/express)
 cd ang-src
 
 npm install   (for angular)
+
+To run at your localhost:
+run command "ng serve" to open your app in browser at http://localhost:4200/
+run command node sever.js to serve api from express
